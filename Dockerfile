@@ -1,6 +1,7 @@
 FROM typesense/typesense:0.25.2
 ENV TYPESENSE_DATA_DIR=/data
-ENV TYPESENSE_API_KEY=your_secure_api_key
+ENV TYPESENSE_API_KEY=please_set_in_render
 ENV TYPESENSE_API_PORT=8108
+ENV TYPESENSE_ENABLE_CORS=true
 VOLUME /data
-CMD ["--data-dir=/data", "--api-key=${TYPESENSE_API_KEY}", "--api-port=${TYPESENSE_API_PORT}"]
+CMD ["--data-dir=/data", "--api-key=Q3qJtHMkhXcSup7RfNGU", "--api-port=8108", "--enable-cors=true"]
