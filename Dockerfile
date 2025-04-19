@@ -6,4 +6,4 @@ ENV TYPESENSE_API_PORT=8108
 
 VOLUME /data
 
-CMD ["--data-dir", "/data", "--api-key", TYPESENSE_API_KEY, "--api-port", TYPESENSE_API_PORT]
+CMD ["--data-dir", TYPESENSE_DATA_DIR, "--api-key", TYPESENSE_API_KEY, "--api-port", TYPESENSE_API_PORT]
